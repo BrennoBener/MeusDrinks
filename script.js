@@ -19,9 +19,8 @@ buttons.forEach(button => {
     // Get the back button element
 const backButton = document.getElementById("back-button");
 
-// Add a click event listener to the back button
-backButton.addEventListener("click", function() {
-  history.go(-1); // Navigate back to the previous page
+// Set the href attribute of the button to the URL of your initial page
+backButton.setAttribute("onclick", "window.location.href = 'index.html'");
       });
     });
   });
