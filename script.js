@@ -16,11 +16,13 @@ buttons.forEach(button => {
       <button class="back-button">Back to Buttons</button>
     `;
 
-    // Get the back button element
+   // Get the back button element
 const backButton = document.getElementById("back-button");
 
-// Set the href attribute of the button to the URL of your initial page
-backButton.setAttribute("onclick", "window.location.href = 'index.html'");
+// Add a click event listener to the back button
+backButton.addEventListener("click", function() {
+  location.href = "index.html"; // Set the URL of the initial page
+  location.reload(); // Reload the page
       });
     });
   });
