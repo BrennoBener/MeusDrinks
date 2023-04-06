@@ -12,6 +12,12 @@ body {
   padding: 10px;
 }
 
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
 .button {
   background-color: #eee;
   border: none;
