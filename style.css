@@ -33,6 +33,7 @@ body {
   text-align: center;
   font-size: 60px;
   cursor: pointer;
+  line-height: 1;
 }
 
 .button:hover {
