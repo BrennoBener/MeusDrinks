@@ -25,8 +25,11 @@ body {
 }
 
 .button {
-  display: block;
+  display: flex;
+  justfy-content: center;
   background-color: #eee;
+  align-items: center;
+  flex-wrap: wrap;
   border: none;
   border-radius: 5px;
   padding: 60px;
