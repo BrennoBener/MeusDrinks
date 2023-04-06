@@ -21,7 +21,8 @@ const backButton = document.getElementById("back-button");
 
 // Add a click event listener to the back button
 backButton.addEventListener("click", function() {
-  location.reload(); // Reload the current page
+  location.href = "index.html"; // Set the URL of the initial page
+  location.reload(); // Reload the page
       });
     });
   });
