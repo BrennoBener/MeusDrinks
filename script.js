@@ -16,13 +16,13 @@ buttons.forEach(button => {
       <button class="back-button">Back to Buttons</button>
     `;
 
-   // Get the back button element
-const backButton = document.getElementById("back-button");
-
-// Add a click event listener to the back button
-backButton.addEventListener("click", function() {
-  location.href = "index.html"; // Set the URL of the initial page
-  location.reload(); // Reload the page
+    // Add event listener to the back button
+    const backButton = document.querySelector('.back-button');
+    backButton.addEventListener('click', () => {
+      // Reset the container innerHTML to the original button list
+      container.innerHTML = '';
+      buttons.forEach(button => {
+        container.appendChild(button);
       });
     });
   });
